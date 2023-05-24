@@ -10,8 +10,8 @@ const App = () => {
 
   const { account } = useEthers();
 
-  const ownerAddress = '0x0D9d7fe338846A4B093d4A3A0a585A6752b66889';
-  const garudaIndonesiaAddress = '0x9C625bbdCdE7d336006c106c716209a06c59A658';
+  const ownerAddress = '0x0dae840A4bf822897957f9BcDf767c96164BEf84';
+  const garudaIndonesiaAddress = '0x0dae840A4bf822897957f9BcDf767c96164BEf84';
 
   return (
     <div className="text-white">

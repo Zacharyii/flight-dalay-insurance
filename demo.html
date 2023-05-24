@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <title>ti</title>
+</head>
+<body>
+    <div className="text-white">
+        <div className="flex justify-end mt-5 mx-10">
+          <WalletConnectButton/>
+        </div>
+        {account === ownerAddress && <AdminPage/>}
+        {account === garudaIndonesiaAddress && <FlightCompanyPage/>}
+        {account !== ownerAddress && account !==garudaIndonesiaAddress && account && <UserPage/>}
+        {!account && (
+          <div className="flex justify-center">
+            <div className="bg-gray-800 p-8 rounded-3xl filter drop-shadow-xl text-center m-20 w-max">
+              <h1 className="text-center font-bold text-xl">连接你的钱包来使用软件!</h1>
+            </div>
+          </div>
+        )}
+      </div>
+</body>

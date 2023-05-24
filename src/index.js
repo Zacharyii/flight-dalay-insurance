@@ -3,14 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
 import { DAppProvider } from '@usedapp/core'
 
 ReactDOM.render(
-  <React.StrictMode>
+  // React.StrictMode 要渲染的所有元素 
+  <React.StrictMode>  
     <DAppProvider>
       <App/>
     </DAppProvider>
   </React.StrictMode>,
+  //将渲染的结果插入到页面中的哪一个容器中
   document.getElementById('root')
 );
 
